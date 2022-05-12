@@ -26,14 +26,22 @@
 <div id="content">
 
     <?php
-        // эти два слеша это комментарий в языке php,
-        // то что написано после них игнорируется интерпретатором
-        // в комментариях обычно пишутся пояснения относительно кода
+        $product = [
+            'id' => 1,
+            'name' => 'Iphone',
+            'desc' => 'Описание для Iphone',
+            'img' => '/images/goods/iphone.jpg',
+            'price' => '2000 $'
+        ];
 
-        $a = 5;
-        $b = 3;
-        $c = $a + $b == 8;
-        var_dump($c);
+        $product['count'] = 162;
+
+        echo "<pre>";
+        var_dump($product);
+        echo "</pre>";
+
+
+        
     ?>
 
     <!--<div id="promo">
