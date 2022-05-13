@@ -26,19 +26,45 @@
 <div id="content">
 
     <?php
-        $product = [
+        $goods = [
+        [
             'id' => 1,
             'name' => 'Iphone',
-            'desc' => 'Описание для Iphone',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu',
             'img' => '/images/goods/iphone.jpg',
             'price' => '2000 $'
+        ],
+        [
+            'id' => 2,
+            'name' => 'HTC',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu',
+            'img' => '/images/goods/htc.jpg',
+            'price' => '1200 $'
+        ],
+        [
+            'id' => 3,
+            'name' => 'Samsung',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu',
+            'img' => '/images/goods/samsung.jpg',
+            'price' => '1400 $'
+        ],
+    ];
+
+
+        $goods[] = [
+            'id' => 4,
+            'name' => 'Explay',
+            'desc' => 'Описание для Explay',
+            'img' => '/images/goods/explay.jpg',
+            'price' => '800 $',
+            'discount' => 20,
+            'count' => 34
         ];
-
-        $product['count'] = 162;
-
-        echo "<pre>";
-        var_dump($product);
-        echo "</pre>";
+        $goods[2]['discount'] = 20;
+        
+    echo "<pre>";
+    var_dump($goods);
+    ?>
 
 
         
