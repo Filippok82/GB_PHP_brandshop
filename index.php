@@ -51,21 +51,18 @@
     ];
 
 
-        $goods[] = [
-            'id' => 4,
-            'name' => 'Explay',
-            'desc' => 'Описание для Explay',
-            'img' => '/images/goods/explay.jpg',
-            'price' => '800 $',
-            'discount' => 20,
-            'count' => 34
-        ];
-        $goods[2]['discount'] = 20;
-        
-    echo "<pre>";
-    var_dump($goods);
-    ?>
+        foreach ($goods as $key => $good) {
+        echo 'Ключ массива: ' . $key . '<br>';
+        echo $good['id'] . '<br>';
+        echo $good['name'] . '<br>';
+        echo $good['desc'] . '<br>';
+        echo $good['img'] . '<br>';
+        echo $good['price'] . '<br>';
 
+        echo '<hr>';
+    }
+
+  
 
         
     ?>
