@@ -57,7 +57,15 @@
     } elseif ($page == 'shop') {
         require('templates/shop.php');
     } elseif ($page == 'product') {
-        echo 'а тут у нас будет страница с открытым товаром';
+        $id = $_GET['id'];
+        $good = [];
+        foreach ($goods as $product) {
+            if ($product['id'] == $id) {
+                $good = $product;
+                break;
+            }
+        }
+        require('templates/openedProduct.php');
     }
 ?>
 
